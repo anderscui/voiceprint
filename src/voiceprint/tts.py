@@ -378,17 +378,17 @@ class QwenTTS:
 if __name__ == '__main__':
     tts = QwenTTS()
     # text = "你好，这是使用参考声音生成的一段测试语音。"
-    text = get_absolute_path('~/Downloads/backups/橱窗语.txt').read_text()
-    # tts.clone(
-    #     text=text,
-    #     ref_audio='~/Downloads/backups/芥川龙之介_me.m4a',
-    #     ref_text=get_absolute_path('~/Downloads/backups/芥川龙之介.txt').read_text(),
-    #     output_path='~/Downloads/backups/橱窗语_me_clone.wav',
-    # )
-
-    tts.speak(
+    text = get_absolute_path('~/Downloads/backups/你好哇.txt').read_text()
+    tts.clone(
         text=text,
-        speaker="Vivian",
-        language='Chinese',
-        output_path='~/Downloads/backups/橱窗语_vivian.wav'
+        ref_audio='~/Downloads/backups/无花果是甜的.m4a',
+        ref_text=get_absolute_path('~/Downloads/backups/无花果是甜的.txt').read_text(),
+        output_path='~/Downloads/backups/你好哇_me_clone.wav',
     )
+
+    # tts.speak(
+    #     text=text,
+    #     speaker="Vivian",
+    #     language='Chinese',
+    #     output_path='~/Downloads/backups/橱窗语_vivian.wav'
+    # )
