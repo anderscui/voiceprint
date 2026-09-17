@@ -46,5 +46,5 @@ if __name__ == '__main__':
 
     asr = QwenASR()
     start = time.time()
-    print(asr.transcribe('~/Downloads/backups/芥川龙之介_me.m4a'))
+    print(asr.transcribe('~/Downloads/backups/Kangfeng Road 17.m4a'))
     print(time.time() - start)
